@@ -16,7 +16,7 @@ We cannot include the data in this release due to licence issues.
 
 But we offer a piece of data sample in `ace-05-splits/sample.json`, the format should be followed.
 
-THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+THE CODE IS A BASIC PRELIMINARY VERSION AND IS LIKE "AS IS", WITHOUT WARRANTY OF ANY KIND.
 
 ### Cite
 Please cite our EMNLP 2018 paper:
