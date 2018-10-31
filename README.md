@@ -21,15 +21,20 @@ THE CODE IS A BASIC PRELIMINARY VERSION AND IS LIKE "AS IS", WITHOUT WARRANTY OF
 ### Cite
 Please cite our EMNLP 2018 paper:
 ```bibtex
-@inproceedings{liu2018,
+@inproceedings{DBLP:conf/emnlp/LiuLH18,
   author    = {Xiao Liu and
                Zhunchen Luo and
                Heyan Huang},
   title     = {Jointly Multiple Events Extraction via Attention-based Graph Information
                Aggregation},
   booktitle = {Proceedings of the 2018 Conference on Empirical Methods in Natural
-               Language Processing},
+               Language Processing, Brussels, Belgium, October 31 - November 4, 2018},
+  pages     = {1247--1256},
   year      = {2018},
-  url       = {http://arxiv.org/abs/1809.09078}
+  crossref  = {DBLP:conf/emnlp/2018},
+  url       = {https://aclanthology.info/papers/D18-1156/d18-1156},
+  timestamp = {Sat, 27 Oct 2018 20:04:50 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/emnlp/LiuLH18},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
