@@ -1,10 +1,15 @@
 # Jointly Multiple Events Extraction (JMEE)
 This is the code of the Jointly Multiple Events Extraction (JMEE) in [our EMNLP 2018 paper](https://arxiv.org/abs/1809.09078).
 
+### Updated Answers
+
+1. We upload the data split files `qi_filelist` using in preprocessing with stanford corenlp.
+2. We provide an example calling the runner for training.
+
 ### Requirement
 - python 3
-- [pytorch](http://pytorch.org) >= 0.4.0
-- [torchtext](https://github.com/pytorch/text) >= 0.2.3
+- [pytorch](http://pytorch.org) == 0.4.0
+- [torchtext](https://github.com/pytorch/text) == 0.2.3
 - [tensorboardX](https://github.com/lanpa/tensorboard-pytorch)
 - [seqeval](https://github.com/chakki-works/seqeval)
 
