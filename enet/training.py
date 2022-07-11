@@ -1,4 +1,5 @@
 import os
+import torch
 from math import ceil
 
 from torchtext.data import BucketIterator
@@ -8,11 +9,16 @@ from enet.util import run_over_data
 
 def train(model, train_set, dev_set, test_set, optimizer_constructor, epochs, tester, parser, other_testsets):
     # build batch on cpu
-    train_iter = BucketIterator(train_set, batch_size=parser.batch, train=False, shuffle=True, device=-1,
+    pt_version = torch.__version__.rsplit('.', 1)
+    if float(pt_version[0]) < 1.1:
+        dev = -1
+    else:
+        dev = model.device
+    train_iter = BucketIterator(train_set, batch_size=parser.batch, train=False, shuffle=True, device=dev,
                                 sort_key=lambda x: len(x.POSTAGS))
-    dev_iter = BucketIterator(dev_set, batch_size=parser.batch, train=False, shuffle=True, device=-1,
+    dev_iter = BucketIterator(dev_set, batch_size=parser.batch, train=False, shuffle=True, device=dev,
                               sort_key=lambda x: len(x.POSTAGS))
-    test_iter = BucketIterator(test_set, batch_size=parser.batch, train=False, shuffle=True, device=-1,
+    test_iter = BucketIterator(test_set, batch_size=parser.batch, train=False, shuffle=True, device=dev,
                                sort_key=lambda x: len(x.POSTAGS))
 
     scores = 0.0
