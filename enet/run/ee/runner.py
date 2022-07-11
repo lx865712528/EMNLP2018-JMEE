@@ -10,6 +10,8 @@ from tensorboardX import SummaryWriter
 from torchtext.data import Field
 from torchtext.vocab import Vectors
 
+sys.path.append(os.path.abspath(os.path.curdir))
+d
 from enet import consts
 from enet.corpus.Data import ACE2005Dataset, MultiTokenField, SparseField, EventField, EntityField
 from enet.models.ee import EDModel
